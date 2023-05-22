@@ -10,7 +10,7 @@ import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 
 // components
-import NavBar from './components/NavBar/NavBar'
+import HorizontalNavBar from './components/HorizontalNavBar/HorizontalNavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 
 // services
@@ -21,13 +21,13 @@ import './App.css'
 
 function App() {
   const [user, setUser] = useState(authService.getUser())
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
-  const handleLogout = () => {
-    authService.logout()
-    setUser(null)
-    navigate('/')
-  }
+  // const handleLogout = () => {
+  //   authService.logout()
+  //   setUser(null)
+  //   navigate('/')
+  // }
 
   const handleAuthEvt = () => {
     setUser(authService.getUser())
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <NavBar user={user} handleLogout={handleLogout} />
+      <HorizontalNavBar />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
         <Route

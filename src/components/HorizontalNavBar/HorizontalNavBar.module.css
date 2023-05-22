@@ -1,0 +1,237 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* background: lightblue; */
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  /* color: white; */
+  /* backdrop-filter: brightness(60%); */
+  /* background-color: rgb(24, 24, 24); */
+  background-color: rgba(24, 24, 24, 0.6);
+
+}
+
+.containerDark{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* background: lightblue; */
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  /* color: white; */
+  /* backdrop-filter: brightness(60%); */
+  background-color: rgb(24, 24, 24);
+}
+
+
+.container ul {
+  padding: 0;
+  /* margin-top: 1.5rem; */
+}
+
+.container li {
+  list-style: none;
+  display: block;
+  float: left;
+  position: relative;
+  padding: 0 1rem;
+  /* width: 11rem; */
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* margin-top: 1rem; */
+}
+
+.container a:hover {
+  /* text-decoration: underline; */
+  /* border: 2px solid white; */
+}
+
+.containerDark ul {
+  padding: 0;
+  /* margin-top: 1.5rem; */
+}
+
+.containerDark li {
+  list-style: none;
+  display: block;
+  float: left;
+  position: relative;
+  padding: 0 1rem;
+  /* width: 11rem; */
+}
+
+.containerDark a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* margin-top: 1rem; */
+}
+
+.containerDark a:hover {
+  /* text-decoration: underline; */
+  /* border: 2px solid white; */
+}
+
+.dropdownContent ul {
+  padding: 0;
+}
+
+
+.dropdownContent {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  margin-top: 1rem;
+  transition: all .5s ease;
+  width: 174px;
+
+}
+
+.container .dropdownContent li {
+  display: block;
+  position: relative;
+  padding: 1rem;
+  /* background-color: blanchedalmond; */
+  background-color: rgba(24, 24, 24, 0.6);
+  /* backdrop-filter: brightness(60%); */
+  /* width: 174px; */
+  margin: 0;
+  width: 100%;
+}
+
+.containerDark .dropdownContent li {
+  display: block;
+  position: relative;
+  padding: 1rem;
+  /* background-color: blanchedalmond; */
+  background-color: rgb(24, 24, 24);
+  width: 100%;
+  margin: 0;
+}
+
+.container .dropdownContent a{
+  /* width: 20rem; */
+  margin: 0;
+  padding: 0;
+  
+}
+
+.containerDark .dropdownContent a{
+  /* width: 20rem; */
+  /* background-color: green; */
+  margin: 0;
+  padding: 0;
+
+}
+
+ul li:hover > ul,
+ul li ul:hover{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  position: absolute;
+}
+
+.secondDropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  margin-top: -2rem;
+  transition: all .5s ease;
+  padding-left: 5rem;
+}
+
+.secondDropdown li {
+  background-color: coral;
+  margin-left: 6rem;
+}
+
+.mobileNav{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 875px) {
+  .container{
+    display: none;
+  }
+
+  .containerDark{
+    display: none;
+  }
+
+  .mobileNav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+  }
+
+  .mobileNavTop button{
+    color: white;
+    font-size: 2rem;
+    background-color: unset;
+    border: none;
+    margin-right: 1rem;
+  }
+
+
+  .mobileLinks {
+    position: absolute;
+    top: 2rem;
+    background-color: rgb(24, 24, 24);
+    width: 100vw;
+    text-align: center;
+  }
+
+  .mobileLinks p {
+    margin: 0;
+    /* background-color: antiquewhite; */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: .5rem;
+    color: rgb(104, 139, 245);
+  }
+
+  .mobileLinks ul{
+    padding: 0;
+    list-style: none;
+  }
+
+  .mobileLinks a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* margin-top: 1rem; */
+  }
+
+  .mobileLinks li {
+    margin-top: .5rem;
+  }
+
+}
