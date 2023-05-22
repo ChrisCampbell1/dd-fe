@@ -1,6 +1,6 @@
 // npm modules
 import { useState } from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 // pages
 import Signup from './pages/Signup/Signup'

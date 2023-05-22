@@ -60,6 +60,7 @@ export default function HeroVideo() {
           }}
         >
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus commodi totam dolore mollitia veritatis doloribus, quia exercitationem amet, dignissimos molestiae provident dolores laudantium eligendi pariatur enim a quibusdam. Iste.</p>
+          <button>Get in Touch</button>
         </motion.div>
       </div>
     </div>
