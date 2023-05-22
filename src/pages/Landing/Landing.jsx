@@ -1,10 +1,19 @@
-// css
+// npm modules
+
+
+// components
+import HeroVideo from '../../components/HeroVideo/HeroVideo'
+
+// services
+
+
+// styles
 import styles from './Landing.module.css'
 
-const Landing = ({ user }) => {
+const Landing = () => {
   return (
     <main className={styles.container}>
-      <h1>hello, {user ? user.name : 'friend'}</h1>
+      <HeroVideo />
     </main>
   )
 }
