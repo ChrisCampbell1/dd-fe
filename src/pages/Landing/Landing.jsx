@@ -5,13 +5,15 @@ import Carousel from 'react-bootstrap/Carousel'
 
 // components
 import HeroVideo from '../../components/HeroVideo/HeroVideo'
+import ContactForm from '../../components/ContactForm/ContactForm'
 
 // services
 
 
 // styles and assets
 import styles from './Landing2.module.css'
-import chris from '../../assets/chris.png'
+// import chris from '../../assets/chris.png'
+import video from '../../assets/placeholder.mp4'
 
 const Landing = () => {
 
@@ -25,11 +27,17 @@ const Landing = () => {
   return (
     <main className={styles.container}>
       <HeroVideo />
-      <div className={styles.introVideo}>
-        <h2>About Me</h2>
-        {/* <video src=""></video> */}
-        <img src={chris} alt="placeholder" />
+
+      <div className={styles.about}>
+        <h2 className="text-body-emphasis">About Me</h2>
+        <video width='700' controls>
+          <source src={video} type="video/mp4" />
+        </video>
+
       </div>
+
+
+
       <h2>Services</h2>
       <div className={styles.services}>
         <Carousel
@@ -85,12 +93,20 @@ const Landing = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className={styles.download}>
-        <h3>placeholder for guide download</h3>
+
+      <div className="my-1">
+        <div className="p-5 text-center bg-body-tertiary">
+          <div className="container py-5">
+            <h2 className="text-body-emphasis">10 Tips For Building Your Own Website</h2>
+            <p className="col-lg-8 mx-auto lead">
+              I put this guide together for people who are on the fence about creating their own website. Here are some free tips if you decide to go the DIY route.
+            </p>
+            <button type='button'>Download</button>
+          </div>
+        </div>
       </div>
-      <div className={styles.contact}>
-        <h3>Contact Form</h3>
-      </div>
+      <h2 className="text-body-emphasis">Let's Chat!</h2>
+      <ContactForm />
     </main>
   )
 }

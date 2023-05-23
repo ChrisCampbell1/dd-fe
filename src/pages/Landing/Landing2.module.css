@@ -72,3 +72,38 @@
   background-color: black;
   color: white;
 }
+
+.container .about {
+  padding: 2rem 0;
+}
+
+.container h2{
+  margin-bottom: 2rem;
+}
+
+.container button {
+  background-color: unset;
+  text-decoration: none;
+  height: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 20%;
+  min-width: 10rem;
+  border: 3px solid white;
+  transition: all ease-in .25s;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
