@@ -1,5 +1,6 @@
 // npm modules
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 // components
 
@@ -22,11 +23,11 @@ export default function HeroVideo() {
     <div className={styles.container}>
       <div className={styles.videoContainer}>
         <video
-        src={video}
-        playsInline
-        autoPlay
-        muted
-        loop
+          src={video}
+          playsInline
+          autoPlay
+          muted
+          loop
         ></video>
       </div>
       <div className={styles.heroContent}>
@@ -59,8 +60,8 @@ export default function HeroVideo() {
             delay: .5,
           }}
         >
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus commodi totam dolore mollitia veritatis doloribus, quia exercitationem amet, dignissimos molestiae provident dolores laudantium eligendi pariatur enim a quibusdam. Iste.</p>
-          <button>Get in Touch</button>
+          <h1>Custom Web Design, Branding, Business Consulting</h1>
+          <Link to={`/contact`}>Get in Touch</Link>
         </motion.div>
       </div>
     </div>

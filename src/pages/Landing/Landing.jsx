@@ -1,5 +1,5 @@
 // npm modules
-
+import { Link } from 'react-router-dom'
 
 // components
 import HeroVideo from '../../components/HeroVideo/HeroVideo'
@@ -15,21 +15,57 @@ const Landing = () => {
     <main className={styles.container}>
       <HeroVideo />
       <div className={styles.introVideo}>
-        <h1>Web Design, Development, and Branding Consulting</h1>
+        <h2>About Me</h2>
         <video src=""></video>
       </div>
       <div className={styles.services}>
         <h2>Services</h2>
         <div className={styles.servicesContainer}>
-          <h3>
-            Website Development
-          </h3>
-          <h3>
-            Lead Capture / Generation
-          </h3>
-          <h3>
-            Brand Development
-          </h3>
+          <div className={styles.serviceCard}>
+            <div className={styles.top}>
+              <h3>Web Development</h3>
+            </div>
+            <div className={styles.bottom}>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laborum iusto sapiente consequatur corporis quia perferendis hic voluptas quo molestiae aperiam, ad modi cumque voluptate ea esse eligendi. Temporibus, laboriosam.</p>
+              <Link>Learn More</Link>
+            </div>
+          </div>
+          <div className={styles.serviceCard}>
+            <div className={styles.top}>
+              <h3>Lead Capture</h3>
+            </div>
+            <div className={styles.bottom}>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, odio. Quasi delectus sapiente, unde officiis tenetur rem eos deleniti cupiditate facere, molestias autem, eaque quidem perferendis doloremque architecto repudiandae soluta.</p>
+              <Link>Learn More</Link>
+            </div>
+          </div>
+          <div className={styles.serviceCard}>
+            <div className={styles.top}>
+              <h3>Lead Generation</h3>
+            </div>
+            <div className={styles.bottom}>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam odio eaque beatae nam dolorum quia architecto earum corporis aperiam suscipit itaque vel vero explicabo laborum, ducimus, impedit autem dicta corrupti?</p>
+              <Link>Learn More</Link>
+            </div>
+          </div>
+          <div className={styles.serviceCard}>
+            <div className={styles.top}>
+              <h3>Branding</h3>
+            </div>
+            <div className={styles.bottom}>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequatur repudiandae suscipit! Accusantium reprehenderit amet a quam autem saepe quaerat dignissimos qui cupiditate ea dolor odit, debitis tenetur at id?</p>
+              <Link>Learn More</Link>
+            </div>
+          </div>
+          <div className={styles.serviceCard}>
+            <div className={styles.top}>
+              <h3>Business Consulting</h3>
+            </div>
+            <div className={styles.bottom}>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel consequatur repudiandae suscipit! Accusantium reprehenderit amet a quam autem saepe quaerat dignissimos qui cupiditate ea dolor odit, debitis tenetur at id?</p>
+              <Link>Learn More</Link>
+            </div>
+          </div>
         </div>
         <div className={styles.download}>
           <h3>placeholder for guide download</h3>

@@ -92,9 +92,10 @@
   color: white;
 }
 
-.container button {
+.container a {
   /* background-color: royalblue; */
   background-color: unset;
+  text-decoration: none;
   height: 2rem;
   /* border-radius: .25rem; */
   color: white;
@@ -110,13 +111,13 @@
   font-weight: bold;
   margin-top: 1rem;
   width: 50%;
-  border: 1px solid white;
-  margin-left: auto;
-  margin-right: auto;
+  border: 3px solid white;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   transition: all ease-in .25s;
 }
 
-.container button:hover {
+.container a:hover {
   cursor: pointer;
   /* background-color: rgb(33, 79, 218); */
   background-color: white;
