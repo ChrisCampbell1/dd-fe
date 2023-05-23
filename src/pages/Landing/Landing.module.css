@@ -11,6 +11,8 @@
 .container .services {
   /* background-color: #2b3036; */
   width: 100%;
+  height: 500px;
+  color: white;
   /* overflow-x: scroll; */
 }
 

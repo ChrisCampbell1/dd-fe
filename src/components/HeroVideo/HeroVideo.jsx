@@ -60,7 +60,7 @@ export default function HeroVideo() {
             delay: .5,
           }}
         >
-          <h1>Custom Web Design, Branding, Business Consulting</h1>
+          <h1>Custom Web Design<br/>Branding<br/>Business Consulting</h1>
           <Link to={`/contact`}>Get in Touch</Link>
         </motion.div>
       </div>

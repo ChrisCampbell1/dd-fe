@@ -8,6 +8,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
+  padding-top: 1rem;
   /* color: white; */
   /* backdrop-filter: brightness(60%); */
   /* background-color: rgb(24, 24, 24); */
@@ -29,6 +30,7 @@
   /* color: white; */
   /* backdrop-filter: brightness(60%); */
   background-color: rgb(24, 24, 24);
+  padding-top: 1rem;
 }
 
 
