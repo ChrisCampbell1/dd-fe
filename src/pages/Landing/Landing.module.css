@@ -22,22 +22,28 @@
 }
 
 .container .servicesContainer .serviceCard {
-  width: 300px;
+  width: 80%;
+  min-height: 300px;
   margin: 3rem;
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container .servicesContainer .serviceCard h3{
   color: black;
-  text-align: center;
-  margin-top: 0;
+  /* text-align: center; */
+  /* margin-top: 0; */
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .container .servicesContainer .serviceCard p{
   color: black;
+  width: 80%;
+  font-size: 1.25rem;
 }
 
 .container .servicesContainer .serviceCard a {
@@ -56,11 +62,13 @@
   padding: 1.5rem;
   font-size: 1.25rem;
   font-weight: bold;
-  margin-top: 1rem;
-  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 20%;
+  min-width: 10rem;
   border: 3px solid black;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   transition: all ease-in .25s;
 }
 
