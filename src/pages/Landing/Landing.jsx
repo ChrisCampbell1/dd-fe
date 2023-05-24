@@ -34,16 +34,15 @@ const Landing = () => {
       <HeroVideo />
 
       <div className={styles.about}>
-        <h2 className="text-body-emphasis">About Me</h2>
+        <h2 className="text-body-emphasis">Real Estate Websites Done Right<br/>For Agents, By An Agent</h2>
         <video width='700' controls>
           <source src={video} type="video/mp4" />
         </video>
 
       </div>
-
-
-
-      <h2>Services</h2>
+      <div className={styles.servicesTitle}>
+        <h2>Services</h2>
+      </div>
       <div className={styles.services}>
         <Carousel
           activeIndex={index}
