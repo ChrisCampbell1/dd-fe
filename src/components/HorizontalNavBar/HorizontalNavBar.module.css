@@ -3,20 +3,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  /* background: lightblue; */
   z-index: 10;
   position: fixed;
   top: 0;
   width: 100vw;
   padding-top: 1rem;
   transition: all 1s ease;
-
-  /* color: white; */
-  /* backdrop-filter: brightness(60%); */
-  /* background-color: rgb(24, 24, 24); */
-  /* background-color: rgba(24, 24, 24, 0.6); */
-
-
 }
 
 .containerDark{
@@ -24,13 +16,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  /* background: lightblue; */
   z-index: 10;
   position: fixed;
   top: 0;
   width: 100vw;
-  /* color: white; */
-  /* backdrop-filter: brightness(60%); */
   background-color: rgb(24, 24, 24);
   padding-top: 1rem;
   transition: all 1s ease;
@@ -40,10 +29,10 @@
 
 .container ul {
   padding: 0;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 75%;
+  width: 75%; */
   /* margin-top: 1.5rem; */
 }
 
@@ -52,21 +41,22 @@
   display: block;
   float: left;
   position: relative;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
   /* width: 11rem; */
 }
 
-.container a {
+.container a{
   color: white;
   text-decoration: none;
-  /* padding: 1rem; */
+  padding: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   /* padding-bottom: 1rem; */
   /* margin-top: 1rem; */
+  
 }
 
-.container a::after {
+/* .container .underline::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -79,10 +69,10 @@
   transition: transform 0.25s ease-out;
 }
 
-.container a:hover::after {
+.container .underline:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
 
 .containerDark ul {
   padding: 0;
@@ -123,7 +113,8 @@
   position: absolute;
   margin-top: 1rem;
   transition: all .5s ease;
-  width: 174px;
+  /* width: 174px; */
+  /* width: 300px; */
 
 }
 
@@ -134,9 +125,10 @@
   /* background-color: blanchedalmond; */
   /* background-color: rgba(24, 24, 24, 0.6); */
   /* backdrop-filter: brightness(60%); */
-  /* width: 174px; */
-  margin: 0;
   width: 100%;
+  margin: 0;
+  /* width: 100%; */
+  /* width: 100%; */
 }
 
 .containerDark .dropdownContent li {
@@ -153,7 +145,7 @@
   /* width: 20rem; */
   margin: 0;
   padding: 0;
-  
+  /* width: 50px; */
 }
 
 .containerDark .dropdownContent a{

@@ -75,16 +75,16 @@ export default function HorizontalNavBar() {
         <>
           <nav className={styles.container}>
           <ul>
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
+              <li><NavLink to="/" className={styles.underline}>Home</NavLink></li>
+              <li><NavLink to="/about" className={styles.underline}>About</NavLink></li>
               <li className={styles.dropdown}><NavLink to="/services">Services</NavLink>
                 <ul className={styles.dropdownContent}>
                   <li><NavLink to='#'>Sub Cat 1</NavLink></li>
                   <li><NavLink to='#'>Sub Cat 2</NavLink></li>
                 </ul>
               </li>
-              <li><NavLink to="/pricing">Pricing</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><NavLink to="/pricing" className={styles.underline}>Pricing</NavLink></li>
+              <li><NavLink to="/contact" className={styles.underline}>Contact</NavLink></li>
             </ul>
           </nav>
         </>
@@ -109,7 +109,7 @@ export default function HorizontalNavBar() {
               }}
             >
               <ul>
-                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/" >Home</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
                 <p onClick={handleSubClick}>Services</p>
                   {displaySub &&
