@@ -2,10 +2,12 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import Modal from 'react-bootstrap/Modal'
 
 // components
 import HeroVideo from '../../components/HeroVideo/HeroVideo'
 import ContactForm from '../../components/ContactForm/ContactForm'
+import ModalForm from '../../components/ModalForm/ModalForm'
 
 // services
 
@@ -16,7 +18,10 @@ import styles from './Landing2.module.css'
 import video from '../../assets/placeholder.mp4'
 
 const Landing = () => {
+  const [show, setShow] = useState(false);
 
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const [index, setIndex] = useState(0);
 
@@ -45,6 +50,8 @@ const Landing = () => {
           onSelect={handleSelect}
           className={styles.serviceCarousel}
           variant='dark'
+          touch={true}
+          indicators={false}
         >
           <Carousel.Item>
             <div className={styles.white}>
@@ -94,19 +101,34 @@ const Landing = () => {
         </Carousel>
       </div>
 
-      <div className="my-1">
-        <div className="p-5 text-center bg-body-tertiary">
-          <div className="container py-5">
+      <div className="my-5">
+        <div className="p-1 text-center bg-body-tertiary">
+          <div className="container py-1">
             <h2 className="text-body-emphasis">10 Tips For Building Your Own Website</h2>
             <p className="col-lg-8 mx-auto lead">
               I put this guide together for people who are on the fence about creating their own website. Here are some free tips if you decide to go the DIY route.
             </p>
-            <button type='button'>Download</button>
+            <button type='button' onClick={handleShow}>Download</button>
           </div>
         </div>
       </div>
-      <h2 className="text-body-emphasis">Let's Chat!</h2>
-      <ContactForm />
+      <h2 className="mt-3 text-body-emphasis">Let's Work Together</h2>
+        <ContactForm />
+
+        <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Provide Contact Info to Download</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <ModalForm handleClose={handleClose}/>
+        </Modal.Body>
+      </Modal>
     </main>
   )
 }

@@ -1,6 +1,8 @@
 // npm modules
 import { NavLink, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 
 
 // components
@@ -95,25 +97,33 @@ export default function HorizontalNavBar() {
             ☰
           </button>
         </div>
+        <AnimatePresence>
         {display &&
-          <div
-            className={styles.mobileLinks}
-          >
-            <ul>
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <p onClick={handleSubClick}>Services</p>
-                {displaySub &&
-                  <>
-                    <li><NavLink to='#'>Sub Cat 1</NavLink></li>
-                    <li><NavLink to='#'>Sub Cat 2</NavLink></li>
-                  </>
-                }
-              <li><NavLink to="/pricing">Pricing</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
-            </ul>
-          </div>
+            <motion.div
+              className={styles.mobileLinks}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{
+                duration: .5,
+              }}
+            >
+              <ul>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
+                <p onClick={handleSubClick}>Services</p>
+                  {displaySub &&
+                    <>
+                      <li><NavLink to='#'>Sub Cat 1</NavLink></li>
+                      <li><NavLink to='#'>Sub Cat 2</NavLink></li>
+                    </>
+                  }
+                <li><NavLink to="/pricing">Pricing</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+              </ul>
+            </motion.div>
         }
+        </AnimatePresence>
       </nav>
     </>
   )

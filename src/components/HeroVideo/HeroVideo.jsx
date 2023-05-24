@@ -61,6 +61,7 @@ export default function HeroVideo() {
           }}
         >
           <h1>Custom Web Design<br/>Branding<br/>Business Consulting</h1>
+          {/* <h1>Your On-Demand Developer</h1> */}
           <Link to={`/contact`}>Get in Touch</Link>
         </motion.div>
       </div>

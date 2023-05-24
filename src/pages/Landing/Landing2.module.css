@@ -2,16 +2,35 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
+}
+
+
+.container .about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .about video {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container h2 {
   text-align: center;
+  color: white;
+}
+
+.container p {
+  color: white;
 }
 
 .container .services {
   /* background-color: #2b3036; */
   width: 100%;
-  height: 500px;
+  height: 400px;
   /* color: black; */
   /* overflow-x: scroll; */
 }
@@ -22,7 +41,7 @@
 
 .container .white {
   width: 100vw;
-  height: 400px;
+  height: 410px;
   background-color: white;
 }
 
@@ -41,11 +60,10 @@
 }
 
 .container .serviceCarousel .caption{
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .container .serviceCarousel .caption a {
@@ -106,4 +124,41 @@
   cursor: pointer;
   background-color: white;
   color: black;
+}
+
+.container .contact {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.container .black p{
+  color: black;
+}
+
+.modal-body p{
+  color: black;
+}
+
+@media only screen and (max-width: 875px) {
+  .container .about video {
+    width: 100vw;
+  }
+  .container .serviceCarousel .caption {
+    padding: 0;
+  }
+
+  .container .serviceCarousel .caption h3{
+    text-align: center;
+  }
+
+  .container .serviceCarousel .caption p{
+    text-align: center;
+  }
+
+  .container .serviceCarousel .caption a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 }
