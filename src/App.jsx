@@ -15,6 +15,7 @@ import LeadGeneration from './pages/LeadGeneration/LeadGeneration'
 import Branding from './pages/Branding/Branding'
 import Consulting from './pages/Consulting/Consulting'
 import Contact from './pages/Contact/Contact'
+import Pricing from './pages/Pricing/Pricing'
 
 
 // components
@@ -75,6 +76,10 @@ function App() {
         <Route
           path="/contact"
           element={<Contact />}
+        />
+        <Route
+          path="/pricing"
+          element={<Pricing />}
         />
         <Route
           path="/profiles"

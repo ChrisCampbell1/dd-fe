@@ -89,6 +89,10 @@
   text-align: right;
 }
 
+.heroContentRight h2{
+  text-align: right;
+}
+
 .heroContent p {
   color: white;
 }
