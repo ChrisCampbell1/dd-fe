@@ -1,6 +1,6 @@
 // npm modules
-import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 
 // pages
 import Signup from './pages/Signup/Signup'
@@ -43,6 +43,19 @@ function App() {
   const handleAuthEvt = () => {
     setUser(authService.getUser())
   }
+
+  const location = useLocation()
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    })
+  }
+
+  useEffect(() => {
+    scrollToTop()
+  }, [location])
 
   return (
     <>

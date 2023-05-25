@@ -20,7 +20,7 @@ export default function Pricing() {
         <div className="col-md-5 p-lg-5 mx-auto my-5">
           <h1 className="display-4 fw-normal">Pricing</h1>
           <p className="lead fw-normal">Dev Daddy Digital offers flexible packages with transparent pricing to meet your business needs. To learn more about customizing these services or for a consultation to see which services best meet your business goals schedule a free consultation.</p>
-          <Link to={`/contact`}>Let's Get Started</Link>
+          <Link to={`/contact`} state={'Free Consultation'}>Let's Get Started</Link>
         </div>
         <div className="product-device shadow-sm d-none d-md-block"></div>
         <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>

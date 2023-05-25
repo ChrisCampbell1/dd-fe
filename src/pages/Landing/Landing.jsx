@@ -63,7 +63,7 @@ const Landing = () => {
                 <li>Show off who you are as an agent</li>
                 <li>Intuitive features that you can use to update content</li>
               </ul>
-              <Link>Learn More</Link>
+              <Link to={`/services`}>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -76,7 +76,7 @@ const Landing = () => {
                 <li>Custom CRM and marketing tool integrations available to keep track of new leads</li>
                 <li>Google Analytics to track web traffic trends</li>
               </ul>
-              <Link>Learn More</Link>
+              <Link to={`/services`}>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -90,7 +90,7 @@ const Landing = () => {
                 <li>Run your own Google Ads campaigns without markups and hidden costs</li>
                 <li>Retain me to manage your Google Ads account</li>
               </ul>
-              <Link>Learn More</Link>
+              <Link to={`/services`}>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -104,7 +104,7 @@ const Landing = () => {
                 <li>Custom marketing pieces that match your new brand</li>
                 <li>Branded social media templates so incorporate your brand into your social channels</li>
               </ul>
-              <Link>Learn More</Link>
+              <Link to={`/services`}>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -117,7 +117,7 @@ const Landing = () => {
                 <li>Customer Relatonship Management consulting</li>
                 <li>Business processes</li>
               </ul>
-              <Link>Learn More</Link>
+              <Link to={`/services`}>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
