@@ -77,16 +77,16 @@ export default function HorizontalNavBar() {
         :
         <>
           <nav className={styles.container}>
-          <ul>
+            <ul>
               <li><NavLink to="/" className={styles.underline}>Home</NavLink></li>
               <li><NavLink to="/about" className={styles.underline}>About</NavLink></li>
               <li className={styles.dropdown}><NavLink to="/services">Services</NavLink>
                 <ul className={styles.dropdownContent}>
-                <li><NavLink to='/services'>Web Design</NavLink></li>
-                  <li><NavLink to='/services'>Lead Capture</NavLink></li>
-                  <li><NavLink to='/services'>Lead Generation</NavLink></li>
-                  <li><NavLink to='/services'>Branding</NavLink></li>
-                  <li><NavLink to='/services'>Business Consulting</NavLink></li>
+                  <li><NavLink to='/services/web-design'>Web Design</NavLink></li>
+                  <li><NavLink to='/services/lead-capture'>Lead Capture</NavLink></li>
+                  <li><NavLink to='/services/lead-generation'>Lead Generation</NavLink></li>
+                  <li><NavLink to='/services/branding'>Branding</NavLink></li>
+                  <li><NavLink to='/services/business-consulting'>Business Consulting</NavLink></li>
                 </ul>
               </li>
               <li><NavLink to="/pricing" className={styles.underline}>Pricing</NavLink></li>
@@ -104,7 +104,7 @@ export default function HorizontalNavBar() {
           </button>
         </div>
         <AnimatePresence>
-        {display &&
+          {display &&
             <motion.div
               className={styles.mobileLinks}
               initial={{ opacity: 0 }}
@@ -118,18 +118,21 @@ export default function HorizontalNavBar() {
                 <li><NavLink to="/" >Home</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
                 <p onClick={handleSubClick}>Services</p>
-                  {displaySub &&
-                    <>
-                      <li><NavLink to='/services'>All</NavLink></li>
-                      <li><NavLink to='#'>Sub Cat 1</NavLink></li>
-                      <li><NavLink to='#'>Sub Cat 2</NavLink></li>
-                    </>
-                  }
+                {displaySub &&
+                  <>
+                    <li><NavLink to='/services'>All</NavLink></li>
+                    <li><NavLink to='/services/web-design'>Web Design</NavLink></li>
+                    <li><NavLink to='/services/lead-capture'>Lead Capture</NavLink></li>
+                    <li><NavLink to='/services/lead-generation'>Lead Generation</NavLink></li>
+                    <li><NavLink to='/services/branding'>Branding</NavLink></li>
+                    <li><NavLink to='/services/business-consulting'>Business Consulting</NavLink></li>
+                  </>
+                }
                 <li><NavLink to="/pricing">Pricing</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
               </ul>
             </motion.div>
-        }
+          }
         </AnimatePresence>
       </nav>
     </>
