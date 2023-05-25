@@ -114,14 +114,14 @@
   margin-top: 1rem;
   transition: all .5s ease;
   /* width: 174px; */
-  /* width: 300px; */
+  width: 300px;
 
 }
 
 .container .dropdownContent li {
   display: block;
   position: relative;
-  padding: 1rem;
+  padding: 0 0 1rem 1rem;
   /* background-color: blanchedalmond; */
   /* background-color: rgba(24, 24, 24, 0.6); */
   /* backdrop-filter: brightness(60%); */
@@ -134,7 +134,7 @@
 .containerDark .dropdownContent li {
   display: block;
   position: relative;
-  padding: 1rem;
+  padding: 0 0 1rem 1rem;
   /* background-color: blanchedalmond; */
   background-color: rgb(24, 24, 24);
   width: 100%;

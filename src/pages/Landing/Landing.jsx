@@ -41,7 +41,7 @@ const Landing = () => {
 
       </div>
       <div className={styles.servicesTitle}>
-        <h2>Services</h2>
+        <h2 className="text-body-emphasis">Services</h2>
       </div>
       <div className={styles.services}>
         <Carousel
@@ -51,13 +51,20 @@ const Landing = () => {
           variant='dark'
           touch={true}
           indicators={false}
+          pause='hover'
         >
           <Carousel.Item>
             <div className={styles.white}>
             </div>
             <Carousel.Caption className={styles.caption}>
-              <h3>Web Development</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus officiis fuga aspernatur eos odio officia, voluptas totam corporis consequuntur veritatis ullam at maxime non cupiditate in saepe nisi voluptates!</p>
+              <h3>Web Design</h3>
+              <ul>
+                <li>Beautiful websites built with modern frameworks and responsive mobile designs</li>
+                <li>SEO and lead generation best practices built into every page</li>
+                <li>Easily create your own neighborhood-specifc landing pages</li>
+                <li>Show off who you are as an agent</li>
+                <li>Intuitive features that you can use to update content</li>
+              </ul>
               <Link>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
@@ -66,7 +73,11 @@ const Landing = () => {
             </div>
             <Carousel.Caption className={styles.caption}>
               <h3>Lead Capture</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus officiis fuga aspernatur eos odio officia, voluptas totam corporis consequuntur veritatis ullam at maxime non cupiditate in saepe nisi voluptates!</p>
+              <ul>
+                <li>Sites that give leads a reason to share their contact information with you</li>
+                <li>Custom CRM and marketing tool integrations available to keep track of new leads</li>
+                <li>Google Analytics to track web traffic trends</li>
+              </ul>
               <Link>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
@@ -75,7 +86,12 @@ const Landing = () => {
             </div>
             <Carousel.Caption className={styles.caption}>
               <h3>Lead Generation</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus officiis fuga aspernatur eos odio officia, voluptas totam corporis consequuntur veritatis ullam at maxime non cupiditate in saepe nisi voluptates!</p>
+              <ul>
+                <li>Easily connect your new website to Google Ads to start generating pay per click traffic</li>
+                <li>Custom landing pages for your ads to track conversion and generate more leads</li>
+                <li>Run your own Google Ads campaigns without markups and hidden costs</li>
+                <li>Retain me to manage your Google Ads account</li>
+              </ul>
               <Link>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
@@ -84,7 +100,12 @@ const Landing = () => {
             </div>
             <Carousel.Caption className={styles.caption}>
               <h3>Branding</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus officiis fuga aspernatur eos odio officia, voluptas totam corporis consequuntur veritatis ullam at maxime non cupiditate in saepe nisi voluptates!</p>
+              <ul>
+                <li>Logo and brand identity development</li>
+                <li>Bring your new online brand into the real world</li>
+                <li>Custom marketing pieces that match your new brand</li>
+                <li>Branded social media templates so incorporate your brand into your social channels</li>
+              </ul>
               <Link>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>
@@ -93,7 +114,11 @@ const Landing = () => {
             </div>
             <Carousel.Caption className={styles.caption}>
               <h3>Business Consulting</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus officiis fuga aspernatur eos odio officia, voluptas totam corporis consequuntur veritatis ullam at maxime non cupiditate in saepe nisi voluptates!</p>
+              <ul>
+                <li>Business tools analysis</li>
+                <li>Customer Relatonship Management consulting</li>
+                <li>Business processes</li>
+              </ul>
               <Link>Learn More</Link>
             </Carousel.Caption>
           </Carousel.Item>

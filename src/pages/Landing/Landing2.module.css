@@ -54,10 +54,11 @@
 
 }
 
-.container .serviceCarousel .caption p{
+.container .serviceCarousel .caption li{
   color: black;
   text-align: left;
   margin-bottom: 0;
+  font-size: 1.25rem;
 }
 
 .container .serviceCarousel .caption{
@@ -164,8 +165,9 @@
     text-align: center;
   }
 
-  .container .serviceCarousel .caption p{
-    text-align: center;
+  .container .serviceCarousel .caption li{
+    /* text-align: center; */
+    font-size: 1rem;
   }
 
   .container .serviceCarousel .caption a {
