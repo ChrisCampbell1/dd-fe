@@ -45,7 +45,7 @@ export default function Pricing() {
                 <li>Training on how to use your new site</li>
                 <li>*Requires monthly hosting</li>
               </ul>
-              <Link className={styles.cardLink} to={`/contact`}>Let's Get Started</Link>
+              <Link className={styles.cardLink} to={`/contact`} state={"Web Desgin"}>Let's Get Started</Link>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Pricing() {
                 <li>You own your domain</li>
                 <li>No long term contracts</li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`}>Let's Get Started</Link>
+              <Link className={styles.cardLink}  to={`/contact`} state={"Web Hosting"}>Let's Get Started</Link>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Pricing() {
                 <li>Font selection</li>
                 <li>Domain name consulting</li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`}>Let's Get Started</Link>
+              <Link className={styles.cardLink}  to={`/contact`} state={"Branding"}>Let's Get Started</Link>
 
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Pricing() {
                 <li>Property Flyer Template</li>
                 <li>Custom templates available for additional investment </li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`}>Let's Get Started</Link>
+              <Link className={styles.cardLink}  to={`/contact`} state={"Marketing Templates"}>Let's Get Started</Link>
 
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Pricing() {
                 <li>Tech tools audit</li>
                 <li>Lead follow up training</li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`}>Let's Get Started</Link>
+              <Link className={styles.cardLink}  to={`/contact`} state={"Consulting"}>Let's Get Started</Link>
 
             </div>
           </div>
@@ -134,8 +134,7 @@ export default function Pricing() {
                 <li>Custom feature development for your website</li>
                 <li>Have an idea? I can probably build it!</li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`}>Let's Get Started</Link>
-
+              <Link className={styles.cardLink}  to={`/contact`} state={"Custom Development"}>Let's Get Started</Link>
             </div>
           </div>
         </div>

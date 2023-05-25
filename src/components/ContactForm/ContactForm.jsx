@@ -1,5 +1,6 @@
 // npm modules
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 // components
 
@@ -14,11 +15,15 @@ import styles from './ContactForm.module.css'
 
 
 export default function ContactForm() {
+  const location = useLocation()
+  const sub = location.state
+  console.log(sub)
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    subject: '',
+    subject: sub? `${sub} Inquiry` : '',
     message: '',
   })
 
@@ -75,6 +80,7 @@ export default function ContactForm() {
           name="subject"
           id="subject"
           onChange={handleChange}
+          value={formData.subject}
         />
       </div>
       </div>
