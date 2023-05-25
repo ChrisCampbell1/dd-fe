@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.container h1 {
+  color: white;
+}
+
+.container h2 {
+  color: white;
+}
+
+.container p {
+  color: white;
+}
+
+@media only screen and (max-width: 875px) {
+  .container {
+    margin-top: 3rem;
+  }
+}

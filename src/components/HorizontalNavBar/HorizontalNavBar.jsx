@@ -49,6 +49,7 @@ export default function HorizontalNavBar() {
 
   useEffect(() => {
     setDisplay(false)
+    changeNavColor()
   }, [location])
 
 
