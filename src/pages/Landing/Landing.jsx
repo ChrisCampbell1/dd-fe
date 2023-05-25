@@ -34,11 +34,9 @@ const Landing = () => {
       <HeroVideo />
 
       <div className={styles.about}>
-        <h2 className="text-body-emphasis">Real Estate Websites Done Right<br/>For Agents, By An Agent</h2>
         <video width='700' controls>
           <source src={video} type="video/mp4" />
         </video>
-
       </div>
       <div className={styles.servicesTitle}>
         <h2 className="text-body-emphasis">Services</h2>

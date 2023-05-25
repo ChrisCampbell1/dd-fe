@@ -62,11 +62,11 @@ export default function HorizontalNavBar() {
               <li><NavLink to="/about">About</NavLink></li>
               <li className={styles.dropdown}><NavLink to="/services">Services</NavLink>
                 <ul className={styles.dropdownContent}>
-                  <li><NavLink to='/services/#web-design'>Web Design</NavLink></li>
-                  <li><NavLink to='/services'>Lead Capture</NavLink></li>
-                  <li><NavLink to='/services'>Lead Generation</NavLink></li>
-                  <li><NavLink to='/services'>Branding</NavLink></li>
-                  <li><NavLink to='/services'>Business Consulting</NavLink></li>
+                  <li><NavLink to='/services/web-design'>Web Design</NavLink></li>
+                  <li><NavLink to='/services/lead-capture'>Lead Capture</NavLink></li>
+                  <li><NavLink to='/services/lead-generation'>Lead Generation</NavLink></li>
+                  <li><NavLink to='/services/branding'>Branding</NavLink></li>
+                  <li><NavLink to='/services/business-consulting'>Business Consulting</NavLink></li>
                 </ul>
               </li>
               <li><NavLink to="/pricing">Pricing</NavLink></li>

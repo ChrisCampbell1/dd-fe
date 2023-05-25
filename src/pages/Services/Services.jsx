@@ -19,6 +19,21 @@ import consulting from '../../assets/consulting.jpg'
 
 
 export default function Services() {
+  // const location = useLocation()
+  // const slug = location.pathname.slice(10)
+  // console.log(slug)
+  // console.log(typeof slug)
+
+  // useEffect(() => {
+  //   if(slug === "lead-capture") {
+  //     window.scrollTo({
+  //       top: 1200,
+  //       behavior: "smooth"
+  //     })
+  //   }
+  // }, [location])
+  
+  
   return (
     <main className={styles.container}>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"}>
@@ -107,7 +122,6 @@ export default function Services() {
       >
         <source src={branding} type="video/mp4"/>
       </video>
-      {/* <img src={branding} className={styles.image + " " + "d-block mx-lg-auto img-fluid"} alt="Brand Development Examples"  loading="lazy" /> */}
     </div>
     <div className="col-lg-6">
       <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Branding</h1>

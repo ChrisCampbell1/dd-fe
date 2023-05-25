@@ -17,6 +17,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .container h2 {
@@ -156,6 +157,7 @@
   .container .about video {
     width: 100vw;
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   .container .serviceCarousel .caption {
     padding: 0;

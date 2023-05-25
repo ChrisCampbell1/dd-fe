@@ -9,6 +9,12 @@ import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Services from './pages/Services/Services'
+import LeadCapture from './pages/LeadCapture/LeadCapture'
+import WebDesign from './pages/WebDesign/WebDesign'
+import LeadGeneration from './pages/LeadGeneration/LeadGeneration'
+import Branding from './pages/Branding/Branding'
+import Consulting from './pages/Consulting/Consulting'
+
 
 // components
 import HorizontalNavBar from './components/HorizontalNavBar/HorizontalNavBar'
@@ -44,6 +50,26 @@ function App() {
         <Route
           path="/services"
           element={<Services/>}
+        />
+        <Route
+          path="/services/web-design"
+          element={<WebDesign/>}
+        />
+        <Route
+          path="/services/lead-capture"
+          element={<LeadCapture/>}
+        />
+        <Route
+          path="/services/lead-generation"
+          element={<LeadGeneration/>}
+        />
+        <Route
+          path="/services/branding"
+          element={<Branding/>}
+        />
+        <Route
+          path="/services/business-consulting"
+          element={<Consulting />}
         />
         <Route
           path="/profiles"

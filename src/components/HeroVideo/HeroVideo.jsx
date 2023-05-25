@@ -60,8 +60,12 @@ export default function HeroVideo() {
             delay: .5,
           }}
         >
-          <h1>Custom Web Design<br/>Branding<br/>Business Consulting</h1>
+          {/* <h1>Custom Web Design<br/>Branding<br/>Business Consulting</h1> */}
           {/* <h1>Your On-Demand Developer</h1> */}
+            <h2 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Real Estate Websites Done Right</h2>
+            <h1 className="display-5 fw-normal lh-1 mb-3">Built for agents by an agent.</h1>
+            <p className="lead fw-normal">Customize a package based on your unique business goals.</p>
+            <Link to={`/services`}>All Services</Link>
           <Link to={`/contact`}>Get in Touch</Link>
         </motion.div>
       </div>
