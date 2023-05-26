@@ -16,6 +16,7 @@ import Branding from './pages/Branding/Branding'
 import Consulting from './pages/Consulting/Consulting'
 import Contact from './pages/Contact/Contact'
 import Pricing from './pages/Pricing/Pricing'
+import About from './pages/About/About'
 
 
 // components
@@ -62,6 +63,10 @@ function App() {
       <HorizontalNavBar />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
+        <Route
+          path="/about"
+          element={<About/>}
+        />
         <Route
           path="/services"
           element={<Services/>}
