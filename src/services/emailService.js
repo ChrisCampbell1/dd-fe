@@ -9,7 +9,7 @@ const sendEmail = async (form) => {
       },
       body: JSON.stringify(form)
     })
-    console.log(res)
+    return res
   } catch (error) {
     console.log(error)
   }
