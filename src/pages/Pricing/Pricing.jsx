@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom'
 
 // components
+import { Helmet } from 'react-helmet-async'
 
 
 // services
@@ -16,6 +17,13 @@ import styles from './Pricing.module.css'
 export default function Pricing() {
   return (
     <main className={styles.container}>
+      <Helmet>
+        <title>
+          Pricing - Customize a Web Design Package That Meets Your Needs
+        </title>
+        <link rel="canonical" href="/pricing" />
+        <meta name='description' content="Dev Daddy Digital offers flexible packages with transparent pricing to meet your business needs." />
+      </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"}>
         <div className="col-md-5 p-lg-5 mx-auto my-5">
           <h1 className="display-4 fw-normal">Pricing</h1>
@@ -38,14 +46,14 @@ export default function Pricing() {
               <h1 className="card-title pricing-card-title">$2,000<span className='fw-light'>*</span></h1>
               <ul className="list-unstyled mt-3 mb-4">
                 <li>Built with SEO best practices</li>
-                <li>Google Analytics and Adwords integration</li>
+                <li>Google Analytics and AdWords integration</li>
                 <li>Display your listings</li>
                 <li>Reviews</li>
                 <li>Create custom neighborhood landing pages</li>
                 <li>Training on how to use your new site</li>
                 <li>*Requires monthly hosting</li>
               </ul>
-              <Link className={styles.cardLink} to={`/contact`} state={"Web Desgin"}>Let's Get Started</Link>
+              <Link className={styles.cardLink} to={`/contact`} state={"Web Design"}>Let's Get Started</Link>
             </div>
           </div>
         </div>
@@ -61,7 +69,7 @@ export default function Pricing() {
                 <li>You own your domain</li>
                 <li>No long term contracts</li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`} state={"Web Hosting"}>Let's Get Started</Link>
+              <Link className={styles.cardLink} to={`/contact`} state={"Web Hosting"}>Let's Get Started</Link>
             </div>
           </div>
         </div>
@@ -78,7 +86,7 @@ export default function Pricing() {
                 <li>Font selection</li>
                 <li>Domain name consulting</li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`} state={"Branding"}>Let's Get Started</Link>
+              <Link className={styles.cardLink} to={`/contact`} state={"Branding"}>Let's Get Started</Link>
 
             </div>
           </div>
@@ -96,7 +104,7 @@ export default function Pricing() {
                 <li>Property Flyer Template</li>
                 <li>Custom templates available for additional investment </li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`} state={"Marketing Templates"}>Let's Get Started</Link>
+              <Link className={styles.cardLink} to={`/contact`} state={"Marketing Templates"}>Let's Get Started</Link>
 
             </div>
           </div>
@@ -114,7 +122,7 @@ export default function Pricing() {
                 <li>Tech tools audit</li>
                 <li>Lead follow up training</li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`} state={"Consulting"}>Let's Get Started</Link>
+              <Link className={styles.cardLink} to={`/contact`} state={"Consulting"}>Let's Get Started</Link>
 
             </div>
           </div>
@@ -134,7 +142,7 @@ export default function Pricing() {
                 <li>Custom feature development for your website</li>
                 <li>Have an idea? I can probably build it!</li>
               </ul>
-              <Link className={styles.cardLink}  to={`/contact`} state={"Custom Development"}>Let's Get Started</Link>
+              <Link className={styles.cardLink} to={`/contact`} state={"Custom Development"}>Let's Get Started</Link>
             </div>
           </div>
         </div>

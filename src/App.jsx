@@ -24,6 +24,8 @@ import HorizontalNavBar from './components/HorizontalNavBar/HorizontalNavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import Modal from 'react-bootstrap/Modal'
 import Footer from './components/Footer/Footer'
+import { Helmet } from 'react-helmet-async'
+
 
 
 // services
@@ -61,19 +63,26 @@ function App() {
     scrollToTop()
   }, [location])
 
-        //modal code
-        const [show, setShow] = useState(false);
-        const [modalMessage, setModalMessage] = useState('')
-  
-        const handleClose = () => {
-          setShow(false);
-          setModalMessage('')
-        }
-        const handleShow = () => setShow(true);
-        //modal code
+  //modal code
+  const [show, setShow] = useState(false);
+  const [modalMessage, setModalMessage] = useState('')
+
+  const handleClose = () => {
+    setShow(false);
+    setModalMessage('')
+  }
+  const handleShow = () => setShow(true);
+  //modal code
 
   return (
     <>
+      <Helmet>
+        <title>
+          Dev Daddy Digital - Custom Web Design and Branding For Real Estate Agents and Brokers
+        </title>
+        <link rel="canonical" href="/" />
+        <meta name='description' content="Real estate websites done right, for agents by an agent turned software engineer." />
+      </Helmet>
       <HorizontalNavBar />
       <Modal
         show={show}
@@ -89,21 +98,21 @@ function App() {
         </Modal.Body>
       </Modal>
       <Routes>
-        <Route 
+        <Route
           path="/"
           element={<Landing
             user={user}
             setModalMessage={setModalMessage}
             handleShow={handleShow}
-          />} 
+          />}
         />
         <Route
           path="/about"
-          element={<About/>}
+          element={<About />}
         />
         <Route
           path="/services"
-          element={<Services/>}
+          element={<Services />}
         />
         <Route
           path="/services/web-design"
@@ -143,11 +152,11 @@ function App() {
         <Route
           path="/contact"
           element={
-          <Contact 
-          setModalMessage={setModalMessage}
-          handleShow={handleShow}
-          />
-        }
+            <Contact
+              setModalMessage={setModalMessage}
+              handleShow={handleShow}
+            />
+          }
         />
         <Route
           path="/pricing"

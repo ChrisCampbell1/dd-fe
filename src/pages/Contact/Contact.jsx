@@ -4,6 +4,7 @@
 // components
 import ContactForm from '../../components/ContactForm/ContactForm'
 // import Modal from 'react-bootstrap/Modal'
+import { Helmet } from 'react-helmet-async'
 
 
 // services
@@ -16,23 +17,30 @@ import styles from './Contact.module.css'
 
 
 export default function Contact({ setModalMessage, handleShow }) {
-      //modal code
-      // const [show, setShow] = useState(false);
-      // const [modalMessage, setModalMessage] = useState('')
+  //modal code
+  // const [show, setShow] = useState(false);
+  // const [modalMessage, setModalMessage] = useState('')
 
-      // const handleClose = () => {
-      //   setShow(false);
-      //   setModalMessage('')
-      // }
-      // const handleShow = () => setShow(true);
-      //modal code
-  
+  // const handleClose = () => {
+  //   setShow(false);
+  //   setModalMessage('')
+  // }
+  // const handleShow = () => setShow(true);
+  //modal code
+
   return (
     <main className={styles.container}>
+      <Helmet>
+        <title>
+          Set Up a Web Design and Branding Consultation Today
+        </title>
+        <link rel="canonical" href="/contact" />
+        <meta name='description' content="Let's chat about how Dev Daddy Digital can meet your unique business needs with custom web development and branding." />
+      </Helmet>
       <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Let's Chat!</h1>
       <h2 className="display-5 fw-normal lh-1 mb-3">Set up a free consultation today.</h2>
       <p className="lead fw-normal">Shoot me a message here or give me a call at 720-678-3060</p>
-      <ContactForm 
+      <ContactForm
         setModalMessage={setModalMessage}
         handleShow={handleShow}
       />

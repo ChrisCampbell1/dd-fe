@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 // components
 import ContactForm from '../../components/ContactForm/ContactForm'
+import { Helmet } from 'react-helmet-async'
+
 
 // services
 
@@ -20,12 +22,18 @@ import branding from '../../assets/branding2.mp4'
 export default function Branding({ setModalMessage, handleShow }) {
   return (
     <main className={styles.container}>
-
+      <Helmet>
+        <title>
+          Custom Brand Development For Real Estate Agents
+        </title>
+        <link rel="canonical" href="/services/branding" />
+        <meta name='description' content="Having a consistent brand across online and physical channels is a common business goal. If you're not sure where to start, Dev Daddy Digital can work with you." />
+      </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"} >
         <div className="row flex-lg-row align-items-center g-5 py-5">
           {/* <div className="col-10 col-sm-8 col-lg-6"> */}
           <div className="col-lg-6">
-            <img src={logo} className={styles.image + " " + "d-block mx-lg-auto img-fluid"} alt="CMA Request Form" loading="lazy" />
+            <img src={logo} className={styles.image + " " + "d-block mx-lg-auto img-fluid"} alt="Dev Daddy Digital" loading="lazy" title="Dev Daddy Digital" />
           </div>
           <div className="col-lg-6">
             <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Real Estate Websites Done Right</h1>
@@ -55,8 +63,8 @@ export default function Branding({ setModalMessage, handleShow }) {
           </div>
           <div className="col-lg-6">
             <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Branding</h1>
-            <p className="lead">Having a consistent brand across online and physical channels is a common business goal. If you have an established brand, we can incorporate it into your new website and create digital tempaltes for spcial media and other assets.</p>
-            <p className="lead">If you're not sure where to start, Dev Daddy Digital can work with you to come up with a visual brand and create the necesary templates for other marketing assets like: social posts, flyers, mailers, newsletters, and more. These are just some exampels of branding work for real estate and other industries.</p>
+            <p className="lead">Having a consistent brand across online and physical channels is a common business goal. If you have an established brand, we can incorporate it into your new website and create digital templates for social media and other assets.</p>
+            <p className="lead">If you're not sure where to start, Dev Daddy Digital can work with you to come up with a visual brand and create the necessary templates for other marketing assets like: social posts, flyers, mailers, newsletters, and more. These are just some examples of branding work for real estate and other industries.</p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <Link to={`/pricing`}>Explore Pricing</Link>
             </div>
