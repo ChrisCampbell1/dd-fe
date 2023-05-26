@@ -151,7 +151,7 @@ const Landing = ({ setModalMessage, handleShow }) => {
           <Modal.Title>Provide Contact Info to Download</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <ModalForm handleClose={handleCloseDownload} />
+          <ModalForm handleCloseDownload={handleCloseDownload} />
         </Modal.Body>
       </Modal>
     </main>
