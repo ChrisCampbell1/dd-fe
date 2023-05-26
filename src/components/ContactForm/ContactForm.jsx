@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 // components
-import Modal from 'react-bootstrap/Modal'
 
 // services
 import * as emailService from '../../services/emailService'

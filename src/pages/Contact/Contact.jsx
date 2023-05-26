@@ -1,9 +1,9 @@
 // npm modules
-import { useState } from 'react';
+// import { useState } from 'react';
 
 // components
 import ContactForm from '../../components/ContactForm/ContactForm'
-import Modal from 'react-bootstrap/Modal'
+// import Modal from 'react-bootstrap/Modal'
 
 
 // services
@@ -15,16 +15,16 @@ import styles from './Contact.module.css'
 // component
 
 
-export default function Contact() {
+export default function Contact({ setModalMessage, handleShow }) {
       //modal code
-      const [show, setShow] = useState(false);
-      const [modalMessage, setModalMessage] = useState('')
+      // const [show, setShow] = useState(false);
+      // const [modalMessage, setModalMessage] = useState('')
 
-      const handleClose = () => {
-        setShow(false);
-        setModalMessage('')
-      }
-      const handleShow = () => setShow(true);
+      // const handleClose = () => {
+      //   setShow(false);
+      //   setModalMessage('')
+      // }
+      // const handleShow = () => setShow(true);
       //modal code
   
   return (
@@ -33,14 +33,11 @@ export default function Contact() {
       <h2 className="display-5 fw-normal lh-1 mb-3">Set up a free consultation today.</h2>
       <p className="lead fw-normal">Shoot me a message here or give me a call at 720-678-3060</p>
       <ContactForm 
-        show={show}
-        setShow={setShow}
         setModalMessage={setModalMessage}
-        handleClose={handleClose}
         handleShow={handleShow}
       />
 
-      <Modal
+      {/* <Modal
         show={show}
         onHide={handleClose}
         keyboard={false}
@@ -52,7 +49,7 @@ export default function Contact() {
         <Modal.Body>
           <p>{modalMessage}</p>
         </Modal.Body>
-      </Modal>
+      </Modal> */}
     </main>
   )
 }

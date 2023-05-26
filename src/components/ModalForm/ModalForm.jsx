@@ -13,7 +13,7 @@ import styles from './ModalForm.module.css'
 // component
 
 
-export default function ModalForm({ handleClose }) {
+export default function ModalForm({ handleCloseDownload }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -31,7 +31,7 @@ export default function ModalForm({ handleClose }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    handleClose()
+    handleCloseDownload()
     // await reviewService.createReview(formData)
     // navigate('/reviews')
   }

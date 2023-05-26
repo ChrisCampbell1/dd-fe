@@ -17,7 +17,7 @@ import branding from '../../assets/branding.mp4'
 // component
 
 
-export default function Branding() {
+export default function Branding({ setModalMessage, handleShow }) {
   return (
     <main className={styles.container}>
 
@@ -68,7 +68,10 @@ export default function Branding() {
 
       <div className={styles.contact}>
         <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Request a Free Consultation</h1>
-        <ContactForm />
+        <ContactForm
+          setModalMessage={setModalMessage}
+          handleShow={handleShow}
+        />
       </div>
     </main>
   )

@@ -22,6 +22,8 @@ import About from './pages/About/About'
 // components
 import HorizontalNavBar from './components/HorizontalNavBar/HorizontalNavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
+import Modal from 'react-bootstrap/Modal'
+
 
 // services
 import * as authService from './services/authService'
@@ -58,11 +60,42 @@ function App() {
     scrollToTop()
   }, [location])
 
+        //modal code
+        const [show, setShow] = useState(false);
+        const [modalMessage, setModalMessage] = useState('')
+  
+        const handleClose = () => {
+          setShow(false);
+          setModalMessage('')
+        }
+        const handleShow = () => setShow(true);
+        //modal code
+
   return (
     <>
       <HorizontalNavBar />
+      <Modal
+        show={show}
+        onHide={handleClose}
+        keyboard={false}
+
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Thanks for reaching out!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>{modalMessage}</p>
+        </Modal.Body>
+      </Modal>
       <Routes>
-        <Route path="/" element={<Landing user={user} />} />
+        <Route 
+          path="/"
+          element={<Landing
+            user={user}
+            setModalMessage={setModalMessage}
+            handleShow={handleShow}
+          />} 
+        />
         <Route
           path="/about"
           element={<About/>}
@@ -73,27 +106,47 @@ function App() {
         />
         <Route
           path="/services/web-design"
-          element={<WebDesign/>}
+          element={<WebDesign
+            setModalMessage={setModalMessage}
+            handleShow={handleShow}
+          />}
         />
         <Route
           path="/services/lead-capture"
-          element={<LeadCapture/>}
+          element={<LeadCapture
+            setModalMessage={setModalMessage}
+            handleShow={handleShow}
+          />}
         />
         <Route
           path="/services/lead-generation"
-          element={<LeadGeneration/>}
+          element={<LeadGeneration
+            setModalMessage={setModalMessage}
+            handleShow={handleShow}
+          />}
         />
         <Route
           path="/services/branding"
-          element={<Branding/>}
+          element={<Branding
+            setModalMessage={setModalMessage}
+            handleShow={handleShow}
+          />}
         />
         <Route
           path="/services/business-consulting"
-          element={<Consulting />}
+          element={<Consulting
+            setModalMessage={setModalMessage}
+            handleShow={handleShow}
+          />}
         />
         <Route
           path="/contact"
-          element={<Contact />}
+          element={
+          <Contact 
+          setModalMessage={setModalMessage}
+          handleShow={handleShow}
+          />
+        }
         />
         <Route
           path="/pricing"

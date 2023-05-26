@@ -17,11 +17,12 @@ import styles from './Landing2.module.css'
 // import chris from '../../assets/chris.png'
 import video from '../../assets/placeholder.mp4'
 
-const Landing = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+const Landing = ({ setModalMessage, handleShow }) => {
+  //download modal
+  const [showDownload, setShowDownload] = useState(false);
+  const handleCloseDownload = () => setShowDownload(false);
+  const handleShowDownload = () => setShowDownload(true);
+  //contact modal
 
   const [index, setIndex] = useState(0);
 
@@ -130,16 +131,18 @@ const Landing = () => {
             <p className="col-lg-8 mx-auto lead">
               I put this guide together for people who are on the fence about creating their own website. Here are some free tips if you decide to go the DIY route.
             </p>
-            <button type='button' onClick={handleShow}>Download</button>
+            <button type='button' onClick={handleShowDownload}>Download</button>
           </div>
         </div>
       </div>
       <h2 className="mt-3 text-body-emphasis">Let's Work Together</h2>
-        <ContactForm />
-
-        <Modal
-        show={show}
-        onHide={handleClose}
+      <ContactForm
+        setModalMessage={setModalMessage}
+        handleShow={handleShow}
+      />
+      <Modal
+        show={showDownload}
+        onHide={handleCloseDownload}
         backdrop="static"
         keyboard={false}
 
@@ -148,7 +151,7 @@ const Landing = () => {
           <Modal.Title>Provide Contact Info to Download</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <ModalForm handleClose={handleClose}/>
+          <ModalForm handleClose={handleCloseDownload} />
         </Modal.Body>
       </Modal>
     </main>

@@ -17,7 +17,7 @@ import leadcapture from '../../assets/leadcapture.png'
 // component
 
 
-export default function LeadCapture() {
+export default function LeadCapture({ setModalMessage, handleShow }) {
   return (
     <main className={styles.container}>
 
@@ -60,7 +60,10 @@ export default function LeadCapture() {
 
       <div className={styles.contact}>
         <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Request a Free Consultation</h1>
-        <ContactForm />
+        <ContactForm
+          setModalMessage={setModalMessage}
+          handleShow={handleShow}
+        />
       </div>
     </main>
   )
