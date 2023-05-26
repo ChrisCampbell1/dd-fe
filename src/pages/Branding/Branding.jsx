@@ -11,7 +11,7 @@ import ContactForm from '../../components/ContactForm/ContactForm'
 // styles and assets
 import styles from './Branding.module.css'
 import logo from '../../assets/black-dd-logo.png'
-import branding from '../../assets/branding.mp4'
+import branding from '../../assets/branding2.mp4'
 
 
 // component

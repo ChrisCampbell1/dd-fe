@@ -34,11 +34,38 @@ const Landing = ({ setModalMessage, handleShow }) => {
     <main className={styles.container}>
       <HeroVideo />
 
-      <div className={styles.about}>
+      {/* <div className={styles.divider}></div> */}
+
+      <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5  text-center bg-body-tertiary"} >
+        <div className="row flex-lg-row align-items-center g-5 py-5">
+          {/* <div className="col-10 col-sm-8 col-lg-6"> */}
+          <div className="col-lg-6">
+            <video
+              controls
+              className={styles.video}
+            >
+              <source src={video} type="video/mp4" />
+            </video>
+          </div>
+          <div className="col-lg-6">
+            {/* <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Branding</h1> */}
+            <p className="lead">Hi there, nice to meet you! I'm Chris, an award winning Realtor turned web developer with over a decade of sales and marketing experience. I've worked for multiple brokerages and always felt like there was something missing from the online marketing tools available to me. I started Dev Daddy Digital to help real estate agents like you build the digital tools and branding that they need at an affordable price.</p>
+            <p className='lead'>Most agents I speak with agree that having a strong online brand is key to their success and generating new busienss but feel stuck with tools that are either inadequate or too complicated to use. My custom websites have the features and customization agents needs with an easy to use interface to manage your content. Don't feel like updating the content on your site? You can also hire me for monthly updates.</p>
+            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+              <Link to={`/pricing`}>Explore Services</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.divider}></div>
+
+
+      {/* <div className={styles.about}>
         <video width='700' controls>
           <source src={video} type="video/mp4" />
         </video>
-      </div>
+      </div> */}
       <div className={styles.servicesTitle}>
         <h2 className="text-body-emphasis">Services</h2>
       </div>
@@ -124,7 +151,7 @@ const Landing = ({ setModalMessage, handleShow }) => {
         </Carousel>
       </div>
 
-      <div className="my-5">
+      <div className={styles.borderGrad + " " + "my-5"}>
         <div className="p-1 text-center bg-body-tertiary">
           <div className="container py-1">
             <h2 className="text-body-emphasis">10 Tips For Building Your Own Website</h2>
@@ -135,6 +162,7 @@ const Landing = ({ setModalMessage, handleShow }) => {
           </div>
         </div>
       </div>
+
       <h2 className="mt-3 text-body-emphasis">Let's Work Together</h2>
       <ContactForm
         setModalMessage={setModalMessage}

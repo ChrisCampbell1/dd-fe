@@ -10,7 +10,8 @@ import { Link } from 'react-router-dom'
 
 // styles and assets
 import styles from './HeroVideo.module.css'
-import video from '../../assets/heroBG.mp4'
+// import video from '../../assets/heroBG.mp4'
+import video from '../../assets/darkblue.mp4'
 import logo from '../../assets/white-dd-logo.png'
 
 // component

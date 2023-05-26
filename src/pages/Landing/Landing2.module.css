@@ -5,6 +5,57 @@
   width: 100vw;
 }
 
+.divider {
+  width: 100%;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, .1);
+  
+  /* background-color: red; */
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.container .hero {
+  background-color: white;
+  margin: 0;
+}
+
+.container .hero video {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container .hero p {
+  color: black;
+}
+
+.container .hero a {
+  background-color: unset;
+  text-decoration: none;
+  height: 2rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 20%;
+  min-width: 14rem;
+  border: 3px solid black;
+  transition: all ease-in .25s;
+  /* margin-top: 2rem; */
+  margin: 1rem auto 0 auto;
+}
+
+.container .hero a:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
 
 .container .about {
   width: 100%;
@@ -151,6 +202,14 @@
   color: black;
   margin-bottom: 0;
   margin-top: 2rem;
+}
+
+.container .borderGrad {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #004FCE, #00B7FA);
+  padding: 2rem 0;
 }
 
 @media only screen and (max-width: 875px) {

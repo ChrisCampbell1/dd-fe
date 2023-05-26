@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 // styles and assets
 import styles from './About.module.css'
 import video from '../../assets/placeholder.mp4'
-import process from '../../assets/process.png'
+import process from '../../assets/process2.png'
 
 // component
 
@@ -19,7 +19,7 @@ export default function About() {
   return (
     <main className={styles.container}>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"}>
-        <div className="col-md-5 p-lg-5 mx-auto my-5">
+        <div className={styles.border + " " +"col-md-5 p-lg-5 mx-auto my-5"}>
           <h1 className="display-4 fw-normal">About Me</h1>
           {/* <p className="lead fw-normal">Dev Daddy Digital offers flexible packages with transparent pricing to meet your business needs. To learn more about customizing these services or for a consultation to see which services best meet your business goals schedule a free consultation.</p> */}
           <Link to={`/contact`} state={'Free Consultation'}>Let's Work Together</Link>

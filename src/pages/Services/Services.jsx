@@ -12,7 +12,7 @@ import styles from './Services.module.css'
 import webdesgin from '../../assets/webdesign.png'
 import leadcapture from '../../assets/leadcapture.png'
 import leadgen from '../../assets/leadgen.png'
-import branding from '../../assets/branding.mp4'
+import branding from '../../assets/branding2.mp4'
 import consulting from '../../assets/consulting.jpg'
 
 // component

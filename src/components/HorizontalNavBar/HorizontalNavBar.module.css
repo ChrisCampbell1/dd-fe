@@ -21,6 +21,7 @@
   top: 0;
   width: 100vw;
   background-color: rgb(24, 24, 24);
+  /* background-color: #0c2aee; */
   padding-top: 1rem;
   /* transition: all .5s ease; */
 }
@@ -236,7 +237,7 @@ ul li ul:hover{
     cursor: pointer;
     text-transform: uppercase;
     margin-top: .5rem;
-    color: rgb(104, 139, 245);
+    color: #00B7FA;
   }
 
   .mobileLinks ul{

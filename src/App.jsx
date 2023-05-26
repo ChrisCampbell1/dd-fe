@@ -23,6 +23,7 @@ import About from './pages/About/About'
 import HorizontalNavBar from './components/HorizontalNavBar/HorizontalNavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import Modal from 'react-bootstrap/Modal'
+import Footer from './components/Footer/Footer'
 
 
 // services
@@ -177,6 +178,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer />
     </>
   )
 }

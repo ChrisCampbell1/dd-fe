@@ -17,6 +17,24 @@
   background-color: white;
 }
 
+.container .border {
+  /* border: solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #004FCE, #00B7FA);
+  padding-bottom: 2rem; */
+}
+/* .container .hero h1 {
+  font-size: 72px;
+  background: hsla(196, 100%, 49%, 1);
+  background: linear-gradient(90deg, hsla(196, 100%, 49%, 1) 0%, hsla(217, 100%, 40%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(196, 100%, 49%, 1) 0%, hsla(217, 100%, 40%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(196, 100%, 49%, 1) 0%, hsla(217, 100%, 40%, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
 .container a {
   background-color: unset;
   text-decoration: none;
