@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 // styles and assets
 import styles from './About.module.css'
-import video from '../../assets/placeholder.mp4'
+import video from '../../assets/ddintro.mp4'
 import process from '../../assets/process2.png'
 import { Helmet } from 'react-helmet-async'
 

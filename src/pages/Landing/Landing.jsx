@@ -15,7 +15,7 @@ import ModalForm from '../../components/ModalForm/ModalForm'
 // styles and assets
 import styles from './Landing2.module.css'
 // import chris from '../../assets/chris.png'
-import video from '../../assets/placeholder.mp4'
+import video from '../../assets/ddintro.mp4'
 
 const Landing = ({ setModalMessage, handleShow }) => {
   //download modal
