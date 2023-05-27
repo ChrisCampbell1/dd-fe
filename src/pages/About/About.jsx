@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 // styles and assets
 import styles from './About.module.css'
-import video from '../../assets/ddintro.mp4'
+// import video from '../../assets/ddintro.mp4'
 import process from '../../assets/process2.png'
 import { Helmet } from 'react-helmet-async'
 
@@ -45,11 +45,11 @@ export default function About() {
           <div className="col-lg-6">
             <video
               controls
-              autoPlay
-              muted
+              autoPlay="true"
+              muted="true"
               className={styles.video}
             >
-              <source src={video} type="video/mp4" />
+              <source src="https://res.cloudinary.com/di65wkfgz/video/upload/v1685208209/ddintro_gt6kjk.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="col-lg-6">

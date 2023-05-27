@@ -10,10 +10,10 @@ import { Helmet } from 'react-helmet-async'
 
 // styles and assets
 import styles from './Services.module.css'
-import webdesign from '../../assets/webdesign2.mp4'
+// import webdesign from '../../assets/webdesign2.mp4'
 import leadcapture from '../../assets/leadcapture.png'
 import leadgen from '../../assets/leadgen2.png'
-import branding from '../../assets/branding2.mp4'
+// import branding from '../../assets/branding2.mp4'
 import consulting from '../../assets/consulting.jpg'
 
 // component
@@ -67,7 +67,7 @@ export default function Services() {
               playsInline="true"
               className={styles.video}
             >
-              <source src={webdesign} type="video/mp4" />
+              <source src="https://res.cloudinary.com/di65wkfgz/video/upload/v1685208204/BrandingGif_2_yzsdcr.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="col-lg-6">
@@ -130,13 +130,13 @@ export default function Services() {
           {/* <div className="col-10 col-sm-8 col-lg-6"> */}
           <div className="col-lg-6">
             <video
-              autoPlay
-              loop
-              muted
-              playsInline
+              autoPlay="true"
+              loop="true"
+              muted="true"
+              playsInline="true"
               className={styles.video}
             >
-              <source src={branding} type="video/mp4" />
+              <source src="https://res.cloudinary.com/di65wkfgz/video/upload/v1685208846/BrandingGif_ufv8hv.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="col-lg-6">

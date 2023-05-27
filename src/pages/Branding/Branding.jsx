@@ -13,7 +13,7 @@ import { Helmet } from 'react-helmet-async'
 // styles and assets
 import styles from './Branding.module.css'
 import logo from '../../assets/black-dd-logo.png'
-import branding from '../../assets/branding2.mp4'
+// import branding from '../../assets/branding2.mp4'
 
 
 // component
@@ -52,13 +52,13 @@ export default function Branding({ setModalMessage, handleShow }) {
           {/* <div className="col-10 col-sm-8 col-lg-6"> */}
           <div className="col-lg-6">
             <video
-              autoPlay
-              loop
-              muted
-              playsInline
+              autoPlay="true"
+              loop="true"
+              muted="true"
+              playsInline="true"
               className={styles.video}
             >
-              <source src={branding} type="video/mp4" />
+              <source src="https://res.cloudinary.com/di65wkfgz/video/upload/v1685208846/BrandingGif_ufv8hv.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="col-lg-6">

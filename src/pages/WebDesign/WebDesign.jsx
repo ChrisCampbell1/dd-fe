@@ -13,7 +13,7 @@ import { Helmet } from 'react-helmet-async'
 // styles and assets
 import styles from './WebDesign.module.css'
 import logo from '../../assets/black-dd-logo.png'
-import webdesign from '../../assets/webdesign2.mp4'
+// import webdesign from '../../assets/webdesign2.mp4'
 
 
 // component
@@ -52,13 +52,13 @@ export default function WebDesign({ setModalMessage, handleShow }) {
           {/* <div className="col-10 col-sm-8 col-lg-6"> */}
           <div className="col-lg-6">
             <video
-              autoPlay
-              loop
-              muted
-              playsInline
+              autoPlay="true"
+              loop="true"
+              muted="true"
+              playsInline="true"
               className={styles.video}
             >
-              <source src={webdesign} type="video/mp4" />
+              <source src="https://res.cloudinary.com/di65wkfgz/video/upload/v1685208204/BrandingGif_2_yzsdcr.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="col-lg-6">

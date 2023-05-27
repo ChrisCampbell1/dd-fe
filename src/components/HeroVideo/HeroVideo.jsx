@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 // styles and assets
 import styles from './HeroVideo.module.css'
 // import video from '../../assets/heroBG.mp4'
-import video from '../../assets/darkblue.mp4'
+// import video from '../../assets/darkblue.mp4'
 import logo from '../../assets/white-dd-logo.png'
 
 // component
@@ -24,7 +24,7 @@ export default function HeroVideo() {
     <div className={styles.container}>
       <div className={styles.videoContainer}>
         <video
-          src={video}
+          src="https://res.cloudinary.com/di65wkfgz/video/upload/v1685208205/darkblue_noqlkq.mp4"
           playsInline="true"
           autoPlay="true"
           muted="true"

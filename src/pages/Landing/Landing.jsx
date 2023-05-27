@@ -15,7 +15,7 @@ import ModalForm from '../../components/ModalForm/ModalForm'
 // styles and assets
 import styles from './Landing2.module.css'
 // import chris from '../../assets/chris.png'
-import video from '../../assets/ddintro.mp4'
+// import video from '../../assets/ddintro.mp4'
 
 const Landing = ({ setModalMessage, handleShow }) => {
   //download modal
@@ -42,11 +42,11 @@ const Landing = ({ setModalMessage, handleShow }) => {
           <div className="col-lg-6">
             <video
               controls
-              muted
-              autoPlay
+              muted="true"
+              autoPlay="true"
               className={styles.video}
             >
-              <source src={video} type="video/mp4" />
+              <source src="https://res.cloudinary.com/di65wkfgz/video/upload/v1685208209/ddintro_gt6kjk.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="col-lg-6">
