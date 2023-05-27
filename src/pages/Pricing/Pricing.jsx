@@ -43,7 +43,7 @@ export default function Pricing() {
               <h4 className="my-0 fw-normal">Custom Website</h4>
             </div>
             <div className={styles.cardBody + " " + "card-body"}>
-              <h1 className="card-title pricing-card-title">$2,000<span className='fw-light'>*</span></h1>
+              <h1 className="card-title pricing-card-title">$2,500<span className='fw-light'>*</span></h1>
               <ul className="list-unstyled mt-3 mb-4">
                 <li>Built with SEO best practices</li>
                 <li>Google Analytics and AdWords integration</li>
