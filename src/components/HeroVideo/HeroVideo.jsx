@@ -25,10 +25,10 @@ export default function HeroVideo() {
       <div className={styles.videoContainer}>
         <video
           src={video}
-          playsInline
-          autoPlay
-          muted
-          loop
+          playsInline="true"
+          autoPlay="true"
+          muted="true"
+          loop="true"
         ></video>
       </div>
       <div className={styles.heroContent}>

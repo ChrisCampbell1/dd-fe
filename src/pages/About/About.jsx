@@ -45,6 +45,8 @@ export default function About() {
           <div className="col-lg-6">
             <video
               controls
+              autoPlay
+              muted
               className={styles.video}
             >
               <source src={video} type="video/mp4" />

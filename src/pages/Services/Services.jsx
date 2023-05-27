@@ -61,10 +61,10 @@ export default function Services() {
           {/* <div className="col-10 col-sm-8 col-lg-6"> */}
           <div className="col-lg-6">
           <video
-              autoPlay
-              loop
-              muted
-              playsInline
+              autoPlay="true"
+              loop="true"
+              muted="true"
+              playsInline="true"
               className={styles.video}
             >
               <source src={webdesign} type="video/mp4" />
