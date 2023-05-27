@@ -42,6 +42,8 @@ const Landing = ({ setModalMessage, handleShow }) => {
           <div className="col-lg-6">
             <video
               controls
+              muted
+              autoPlay
               className={styles.video}
             >
               <source src={video} type="video/mp4" />

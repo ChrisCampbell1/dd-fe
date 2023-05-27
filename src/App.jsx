@@ -3,11 +3,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 
 // pages
-import Signup from './pages/Signup/Signup'
-import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
-import Profiles from './pages/Profiles/Profiles'
-import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Services from './pages/Services/Services'
 import LeadCapture from './pages/LeadCapture/LeadCapture'
 import WebDesign from './pages/WebDesign/WebDesign'
@@ -21,7 +17,6 @@ import About from './pages/About/About'
 
 // components
 import HorizontalNavBar from './components/HorizontalNavBar/HorizontalNavBar'
-import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import Modal from 'react-bootstrap/Modal'
 import Footer from './components/Footer/Footer'
 import { Helmet } from 'react-helmet-async'
@@ -29,7 +24,6 @@ import { Helmet } from 'react-helmet-async'
 
 
 // services
-import * as authService from './services/authService'
 
 // styles
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,19 +31,6 @@ import './App.css'
 
 
 function App() {
-  const [user, setUser] = useState(authService.getUser())
-  // const navigate = useNavigate()
-
-  // const handleLogout = () => {
-  //   authService.logout()
-  //   setUser(null)
-  //   navigate('/')
-  // }
-
-  const handleAuthEvt = () => {
-    setUser(authService.getUser())
-  }
-
   const location = useLocation()
   const scrollToTop = () => {
     window.scrollTo({
@@ -101,7 +82,6 @@ function App() {
         <Route
           path="/"
           element={<Landing
-            user={user}
             setModalMessage={setModalMessage}
             handleShow={handleShow}
           />}
@@ -161,30 +141,6 @@ function App() {
         <Route
           path="/pricing"
           element={<Pricing />}
-        />
-        <Route
-          path="/profiles"
-          element={
-            <ProtectedRoute user={user}>
-              <Profiles />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/auth/signup"
-          element={<Signup handleAuthEvt={handleAuthEvt} />}
-        />
-        <Route
-          path="/auth/login"
-          element={<Login handleAuthEvt={handleAuthEvt} />}
-        />
-        <Route
-          path="/auth/change-password"
-          element={
-            <ProtectedRoute user={user}>
-              <ChangePassword handleAuthEvt={handleAuthEvt} />
-            </ProtectedRoute>
-          }
         />
       </Routes>
       <Footer />

@@ -218,6 +218,15 @@
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
   }
+
+  .container .white {
+    min-height: 450px;
+  }
+
+  .container .services {
+    margin-bottom: 2rem;
+  }
+
   .container .serviceCarousel .caption {
     padding: 0;
   }
