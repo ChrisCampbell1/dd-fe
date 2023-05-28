@@ -21,7 +21,7 @@ const Landing = ({ setModalMessage, handleShow }) => {
   //download modal
   const [showDownload, setShowDownload] = useState(false);
   const handleCloseDownload = () => setShowDownload(false);
-  const handleShowDownload = () => setShowDownload(true);
+  // const handleShowDownload = () => setShowDownload(true);
   //contact modal
 
   const [index, setIndex] = useState(0);
@@ -153,7 +153,10 @@ const Landing = ({ setModalMessage, handleShow }) => {
         </Carousel>
       </div>
 
-      <div className={styles.borderGrad + " " + "my-5"}>
+      <div className={styles.divider}></div>
+
+
+      {/* <div className={styles.borderGrad + " " + "my-5"}>
         <div className="p-1 text-center bg-body-tertiary">
           <div className="container py-1">
             <h2 className="text-body-emphasis">10 Tips For Building Your Own Website</h2>
@@ -163,7 +166,7 @@ const Landing = ({ setModalMessage, handleShow }) => {
             <button type='button' onClick={handleShowDownload}>Download</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <h2 className="mt-3 text-body-emphasis">Let's Work Together</h2>
       <ContactForm
