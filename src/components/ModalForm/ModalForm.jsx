@@ -95,7 +95,7 @@ export default function ModalForm({ handleCloseDownload }) {
         <button>Submit</button>
       </form>
       <a
-        href='/test.png'
+        href='/DevDaddyTips.pdf'
         download 
         id={'downloadGuide'}
         style={
