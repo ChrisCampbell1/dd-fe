@@ -159,7 +159,7 @@ const Landing = ({ setModalMessage, handleShow }) => {
       <div className={styles.borderGrad + " " + "my-5"}>
         <div className="p-1 text-center bg-body-tertiary">
           <div className="container py-1">
-            <h2 className="text-body-emphasis">10 Tips For Building Your Own Website</h2>
+            <h2 className="text-body-emphasis">Tips For Building Your Own Website</h2>
             <p className="col-lg-8 mx-auto lead">
               I put this guide together for people who are on the fence about creating their own website. Here are some free tips if you decide to go the DIY route.
             </p>
