@@ -97,12 +97,13 @@ export default function Pricing() {
               <h4 className="my-0 fw-normal">Marketing Templates</h4>
             </div>
             <div className={styles.cardBody + " " + "card-body"}>
-              <h1 className="card-title pricing-card-title">$300</h1>
+              <h1 className="card-title pricing-card-title">$300*</h1>
               <ul className="list-unstyled mt-3 mb-4">
                 <li>4 Social Media Templates</li>
                 <li>Newsletter Template</li>
                 <li>Property Flyer Template</li>
                 <li>Custom templates available for additional investment </li>
+                <li>*For best experience, Canva Pro account is suggested to use templates.</li>
               </ul>
               <Link className={styles.cardLink} to={`/contact`} state={"Marketing Templates"}>Let's Get Started</Link>
 
