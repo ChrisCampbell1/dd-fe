@@ -1,6 +1,7 @@
 // npm modules
 import { useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
+
 
 // components
 
@@ -21,6 +22,8 @@ export default function ContactForm({ setModalMessage, handleShow }) {
     // const handleShow = () => setShow(true);
     // let modalMessage = ''
     //modal code
+
+    const navigate = useNavigate()
   
   const location = useLocation()
   const sub = location.state
@@ -37,40 +40,19 @@ export default function ContactForm({ setModalMessage, handleShow }) {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  //google conversion tracking
-  // let dataLayer = window.dataLayer || [];
-  // function gtag() { dataLayer.push(arguments); }
-
-
-  // const gtag_report_conversion = (url) => {
-  //   var callback = function () {
-  //     if (typeof(url) != 'undefined') {
-  //       window.location = url;
-  //     }
-  //   };
-  //   gtag('event', 'conversion', {
-  //       'send_to': 'AW-401059015/icYFCPbYkqYYEMfZnr8B',
-  //       'event_callback': callback
-  //   });
-  //   return false;
-  // }
-
   const handleSubmit = async (e) => {
     e.preventDefault()
-    // gtag_report_conversion('http://devdaddydigital.com/')
-    // await emailService.sendEmail(formData)
     const res = await emailService.sendEmail(formData)
-    // const responseBody = await res.json()
-    // console.log(res.status)
     if (res.status === 200){
-      setModalMessage("Thanks for reaching out! I'll be in touch as soon as possible. For urgent inquiries you can call me at 720-678-3060.")
+      setModalMessage("I'll be in touch as soon as possible. For urgent inquiries you can call me at 720-678-3060.")
     } else {
       setModalMessage("There was an error with the email server. Please give me a call or text at 720-678-3060. You can also email me directly at hi@devdaddydigital.com")
     }
     // setModalMessage("I'll be in touch as soon as possible. For urgent inquiries you can call me at 720-678-3060.")
-    handleShow()
+    // handleShow()
     //200 is success 400 is failure res.status
-    e.target.reset()
+    // e.target.reset()
+    navigate(`/thankyou`)
   }
 
 
