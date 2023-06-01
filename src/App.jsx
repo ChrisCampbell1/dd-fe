@@ -13,6 +13,7 @@ import Consulting from './pages/Consulting/Consulting'
 import Contact from './pages/Contact/Contact'
 import Pricing from './pages/Pricing/Pricing'
 import About from './pages/About/About'
+import ThankYou from './pages/ThankYou/ThankYou'
 
 
 // components
@@ -89,6 +90,12 @@ function App() {
         <Route
           path="/about"
           element={<About />}
+        />
+        <Route
+          path="/thankyou"
+          element={<ThankYou
+              modalMessage={modalMessage}
+            />}
         />
         <Route
           path="/services"

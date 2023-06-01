@@ -37,8 +37,27 @@ export default function ContactForm({ setModalMessage, handleShow }) {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
+  //google conversion tracking
+  // let dataLayer = window.dataLayer || [];
+  // function gtag() { dataLayer.push(arguments); }
+
+
+  // const gtag_report_conversion = (url) => {
+  //   var callback = function () {
+  //     if (typeof(url) != 'undefined') {
+  //       window.location = url;
+  //     }
+  //   };
+  //   gtag('event', 'conversion', {
+  //       'send_to': 'AW-401059015/icYFCPbYkqYYEMfZnr8B',
+  //       'event_callback': callback
+  //   });
+  //   return false;
+  // }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
+    // gtag_report_conversion('http://devdaddydigital.com/')
     // await emailService.sendEmail(formData)
     const res = await emailService.sendEmail(formData)
     // const responseBody = await res.json()
