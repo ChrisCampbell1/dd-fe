@@ -20,7 +20,7 @@ export default function ThankYou({ modalMessage }) {
         <title>
           Thanks for your message!
         </title>
-        <link rel="canonical" href="/thankyou" />
+        <link rel="canonical" href="/thankyou/" />
         {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-55Y7G4GVHM"></script>
         <script>
           window.dataLayer = window.dataLayer || [];

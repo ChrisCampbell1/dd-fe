@@ -34,7 +34,7 @@ export default function Contact({ setModalMessage, handleShow }) {
         <title>
           Set Up a Web Design and Branding Consultation Today
         </title>
-        <link rel="canonical" href="/contact" />
+        <link rel="canonical" href="/contact/" />
         <meta name='description' content="Let's chat about how Dev Daddy Digital can meet your unique business needs with custom web development and branding." />
       </Helmet>
       <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">Let's Chat!</h1>

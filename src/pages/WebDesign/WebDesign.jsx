@@ -26,7 +26,7 @@ export default function WebDesign({ setModalMessage, handleShow }) {
         <title>
           Custom Web Design for Real Estate
         </title>
-        <link rel="canonical" href="/services/web-design" />
+        <link rel="canonical" href="/services/web-design/" />
         <meta name='description' content="Most agents that I've spoken to, myself included, either don't have the website building tools they need or have a tool that is too complicated to use." />
       </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"} >

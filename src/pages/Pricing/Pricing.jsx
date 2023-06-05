@@ -21,7 +21,7 @@ export default function Pricing() {
         <title>
           Pricing - Customize a Web Design Package That Meets Your Needs
         </title>
-        <link rel="canonical" href="/pricing" />
+        <link rel="canonical" href="/pricing/" />
         <meta name='description' content="Dev Daddy Digital offers flexible packages with transparent pricing to meet your business needs." />
       </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"}>

@@ -26,7 +26,7 @@ export default function Branding({ setModalMessage, handleShow }) {
         <title>
           Custom Brand Development For Real Estate Agents
         </title>
-        <link rel="canonical" href="/services/branding" />
+        <link rel="canonical" href="/services/branding/" />
         <meta name='description' content="Having a consistent brand across online and physical channels is a common business goal. If you're not sure where to start, Dev Daddy Digital can work with you." />
       </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"} >

@@ -24,7 +24,7 @@ export default function About() {
         <title>
           About Me - A Realtor Turned Software Engineer Building Real Estate Websites
         </title>
-        <link rel="canonical" href="/about" />
+        <link rel="canonical" href="/about/" />
         <meta name='description' content="I'm a realtor turned software engineer. Learn how I put my experience to work to build beautiful and easy to use real estate websites." />
       </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"}>

@@ -41,7 +41,7 @@ export default function Services() {
         <title>
           Services - Digital Tools, Web Design, and Branding for Real Estate
         </title>
-        <link rel="canonical" href="/services" />
+        <link rel="canonical" href="/services/" />
         <meta name='description' content="I started Dev Daddy Digital to help real estate agents like you build the digital tools and branding that they need at an affordable price." />
       </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"}>

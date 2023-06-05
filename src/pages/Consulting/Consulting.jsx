@@ -25,7 +25,7 @@ export default function Consulting({ setModalMessage, handleShow }) {
         <title>
           Business Process and CRM Consulting for Real Estate Agents
         </title>
-        <link rel="canonical" href="/services/business-consulting" />
+        <link rel="canonical" href="/services/business-consulting/" />
         <meta name='description' content="If you need help customizing your CRM, organizing your leads, or training your team on the best process to follow up with leads, I'm here to help." />
       </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"} >

@@ -25,7 +25,7 @@ export default function LeadGeneration({ setModalMessage, handleShow }) {
         <title>
           Lead Generation Websites and Landing Pages for Real Estate
         </title>
-        <link rel="canonical" href="/services/lead-generation" />
+        <link rel="canonical" href="/services/lead-generation/" />
         <meta name='description' content="Dev Daddy Digital sites are built for lead generation. All pages are built with SEO best practices and ready to be connected to Google AdWords." />
       </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"} >

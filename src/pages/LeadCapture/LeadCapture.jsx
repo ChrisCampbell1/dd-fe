@@ -25,7 +25,7 @@ export default function LeadCapture({ setModalMessage, handleShow }) {
         <title>
           Lead Capturing Websites for Real Estate
         </title>
-        <link rel="canonical" href="/services/lead-capture" />
+        <link rel="canonical" href="/services/lead-capture/" />
         <meta name='description' content="Lead capture is one of the main goals for real estate websites. Dev Daddy Digital sites feature multiple touchpoints to capture leads." />
       </Helmet>
       <div className={styles.hero + " " + "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"} >
